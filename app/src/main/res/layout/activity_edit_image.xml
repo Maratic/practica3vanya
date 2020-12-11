@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditImageActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp"
+        >
+
+    </ImageView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:onClick="Rotate_90"
+        android:text="Повернуть \n на 90 гр"
+        android:gravity="bottom|left">
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="Reflect"
+        android:text="отразить по \n горизонтали"
+        android:layout_gravity="right|bottom">
+
+    </Button>
+
+</FrameLayout>
